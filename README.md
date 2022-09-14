@@ -10,7 +10,7 @@ Quick access:
  
 As part of the Safe AI tech challenge, redefined the labels in the A2D2 dataset where traffic light as 1 and the rest as background 0. Out of 5000 samples only 1307 samples has traffic lights and the rest without traffic lights. Created a separate folder which contains only traffic lights labels and a folder with all the redefined lables to train two models and to evaluate the model perfomace.
 
-The folder data_utils cotains the python scripts to create new labels (mask_generator.py) and to preprocess the data (dataloader.py, utils.py).
+The folder data_utils cotains the python scripts to create new labels and store it in a folder (mask_generator.py) and to preprocess the data (dataloader.py, utils.py).
 
 Example of redefined label
 ![alt text](https://github.com/bayesdeep/safe_ai/blob/master/plots/traffic_light.png)
