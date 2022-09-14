@@ -29,11 +29,9 @@ Inference is carried out in two approches:
 
 
 # observation:
-     The overall iou on the model trained with the complete dataset : 
-
-1. main.ipynb:
-2. main_complete_data.ipynb
-            this 
-3. train.py
-4. test.py
-5. metrics.py
+*  The overall iou on the model trained with the complete dataset is: 0.3633
+*  The overall iou on the model trained with only traffic lights is: 0.6073 
+* Getting decent estimation of uncertainty which can be seen in the heatmap visualization in the notebooks, the advantage/reason would be the simple dataset for the choosen model.
+* The model perfomance is evaluated with the augmented dataset (increasing the contrast and hue, randomly choosen) and we can notice the uncertainty
+    ![alt text](https://github.com/bayesdeep/safe_ai/blob/master/plots/mcd_prediction%20(copy).png)
+* The inference time of Monte-Carlo dropout method is higher than the standard inference time,and also the difference between Monte-Carlo dropout and standard basline looks alike but we can expect a better uncertainty estimation by tuning the dropout parameter and increasing the number of forward passes.
