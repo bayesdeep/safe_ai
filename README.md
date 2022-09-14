@@ -12,6 +12,8 @@ As part of the Safe AI tech challenge, redefined the labels in the A2D2 dataset 
 
 The folder data_utils cotains the python scripts to create new labels (mask_generator.py) and to preprocess the data (dataloader.py, utils.py).
 
+Example of redefined label
+![alt text](https://github.com/bayesdeep/safe_ai/blob/master/plots/traffic_light.png)
 # Model 
 
 For semantic segmentation the Deeplabv3Plus mobilenet model with the the pretrained weights are used which can be accesed from the git repository:  https://github.com/VainF/DeepLabV3Plus-Pytorch.git.
